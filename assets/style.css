@@ -184,6 +184,9 @@ img {
 
         &:hover {
           font-size: 18px;
+          color: var(--sp-bg-top-header);
+          border-color: var(--sp-mark-green);
+          background-color: var(--sp-mark-green);
         }
       }
     }
