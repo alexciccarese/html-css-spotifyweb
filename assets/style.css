@@ -197,7 +197,6 @@ img {
   position: sticky;
   display: flex;
   justify-content: space-between;
-  gap: 8rem;
   bottom: 0;
   padding: 0.5rem;
   z-index: 1;
@@ -206,44 +205,50 @@ img {
     width: 30%;
     height: 100%;
     display: flex;
-    justify-content: space-between;
-    align-items: center;
-    gap: 0.5rem;
 
     .img_live {
       width: 28px;
+      height: 28px;
     }
 
-    .song_name {
+    .container {
+      width: 130px;
       display: flex;
-      gap: 0.5rem;
+      justify-content: space-between;
+      align-items: center;
+      gap: 1rem;
 
-      h5 {
-        color: var(--sp-light-grey);
-      }
-
-      h6 {
-        color: var(--sp-dark-grey);
-      }
-    }
-
-    .save_song {
-      display: flex;
-      flex-direction: column;
-      gap: 0.2rem;
-
-      .heart {
-        &:hover {
-          content: url(./img/heart_light.png);
+      .song_name {
+        display: flex;
+        align-items: center;
+        gap: 0.5rem;
+  
+        h5 {
+          color: var(--sp-light-grey);
+        }
+  
+        h6 {
+          color: var(--sp-dark-grey);
         }
       }
-
-      .folder {
-        &:hover {
-          content: url(./img/folder_light.png);
+      
+      .save_song {
+        display: none;
+  
+        .heart {
+          &:hover {
+            content: url(./img/heart_light.png);
+          }
+        }
+  
+        .folder {
+          &:hover {
+            content: url(./img/folder_light.png);
+          }
         }
       }
     }
+
   }
 
   .player {
@@ -272,9 +277,10 @@ img {
     }
 
     .player_down {
-      width: 100%;
+      width: 200px;
       color: var(--sp-light-grey);
       display: flex;
+      justify-content: center;
       align-items: center;
       gap: 1rem;
 
@@ -286,10 +292,32 @@ img {
         border-radius: 2px;
 
         .inside {
+          display: flex;
+          align-items: center;
           position: absolute;
           left: 0;
           width: 30%;
           background-color: var(--sp-light-grey);
+
+          .pointer {
+            background-color: var(--sp-light-grey);
+            width: 1rem;
+            height: 1rem;
+            border-radius: 10px;
+            position: absolute;
+            right: -10%;
+            position: center;
+            display: none;
+          }
+
+          &:hover {
+            cursor: pointer;
+            background-color: var(--sp-mark-green);
+
+            .pointer {
+              display: block;
+            }
+          }
         }
       }
     }
@@ -330,7 +358,7 @@ img {
         }
 
         #home {
-          border-left: 1px solid var(--sp-mark-green);
+          border-left: 2px solid var(--sp-mark-green);
         }
       }
 
