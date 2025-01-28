@@ -214,6 +214,10 @@ body {
         .divider {
           display: block;
         }
+
+        .line {
+          display: block;
+        }
     }
   }
 }
