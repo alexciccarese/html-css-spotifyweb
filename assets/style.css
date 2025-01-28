@@ -246,18 +246,20 @@ img {
 
   .player {
     width: 30%;
-    display: flex;
-    align-items: center;
 
     img {
       height: 100%;
     }
 
     .player_top {
-      width: 200px;
+      max-width: 200px;
       display: flex;
       justify-content: space-between;
       align-items: center;
+    }
+
+    .player_down {
+      width: 100%;
     }
   }
 }
@@ -315,4 +317,5 @@ img {
         }
     }
   }
+}
 }
