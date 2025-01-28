@@ -100,18 +100,29 @@ body {
         padding-left: 1rem;
       }
 
-      .add_button {
-        background-color: var(--sp-dark-grey);
-        width: 37px;
-        height: 37px;
-        text-align: center;
-        font-size: 32px;
-        font-weight: 600;
+      .add {
+
+        .add_button {
+          background-color: var(--sp-dark-grey);
+          width: 37px;
+          height: 37px;
+          text-align: center;
+          font-size: 32px;
+          font-weight: 600;
+        }
 
         &:hover {
-          background-color: var(--sp-light-grey);
+
+          .add_button {
+            background-color: var(--sp-light-grey);
+          }
+
+          a {
+            color: var(--sp-light-grey);
+          }
         }
       }
+
 
       nav {
         padding: 0.5rem 0;
