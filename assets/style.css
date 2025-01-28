@@ -40,7 +40,7 @@ body {
   display: flex;
 
   .sidebar {
-    width: 50px;
+    min-width: 50px;
   }
 
   main {
@@ -56,3 +56,21 @@ body {
 .bottom {
   height: 90px;
 }
+
+
+/*************************************************
+    MOBILE LARGE
+ *************************************************/
+ @media screen and (min-width:576px) {
+
+    .top {
+
+      .sidebar {
+        width: 230px;
+      }
+
+      main {
+        width: 100%;
+      }
+    }
+ }
