@@ -8,6 +8,10 @@
   --sp-
 }
 
+body {
+  font-family: "Montserrat", serif;
+}
+
 .debug {
 
   .top {
