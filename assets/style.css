@@ -6,7 +6,7 @@
 
 :root {
   --sp-black: #080b12;
-  --sp-dark-grey: #a3a3a3;
+  --sp-dark-grey: #6b6b6b;
   --sp-light-grey: #d2d2d2;
   --sp-text-hover:#ededed;
   --sp-mark-green: #adff2f;
@@ -74,6 +74,10 @@ body {
         text-decoration: none;
         font-weight: 600;
         display: none;
+
+        &:hover {
+          color: var(--sp-text-hover);
+        }
       }
 
       #home {
