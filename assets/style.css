@@ -18,14 +18,8 @@ body {
   font-family: "Montserrat", serif;
 }
 
-.debug {
-
-  .top {
-
-    main {
-      background-color: rgba(6, 167, 188, 0.363);
-    }
-  }
+img {
+  max-width: 100%;
 }
 
 
@@ -39,6 +33,9 @@ body {
     align-items: center;
     flex-direction: column;
     padding-top: 0.5rem;
+    position: fixed;
+    top: 0;
+    z-index: 1;
 
     .logo {
       width: 28px;
@@ -199,6 +196,7 @@ body {
   justify-content: space-between;
   bottom: 0;
   padding: 0.5rem;
+  z-index: 1;
 
   .output {
     width: 30%;
@@ -246,6 +244,19 @@ body {
 
   .player {
     width: 30%;
+    display: flex;
+    align-items: center;
+
+    img {
+      height: 100%;
+    }
+
+    .player_top {
+      width: 200px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
   }
 }
 
