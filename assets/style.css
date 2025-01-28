@@ -53,16 +53,15 @@ body {
 
     nav {
       padding: 1rem 0;
-      width: 100%;
+      width: 100%; 
+    }
 
-
-      li {
-        display: flex;
-        justify-content: center;
-        align-items: center;
-        gap: 0.5rem;
-        padding: 0.3rem 0;
-      }
+    li {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      padding: 0.5rem 0;
 
       .icon {
         color: var(--sp-dark-grey);
@@ -84,6 +83,33 @@ body {
         a {
           color: var(--sp-text-hover);
         }
+      }
+    }
+
+    .playlist {
+      display: none;
+      margin-top: 0.5rem;
+      
+      h4 {
+        color: white;
+        padding-left: 1rem;
+      }
+
+      .add_button {
+        background-color: var(--sp-dark-grey);
+        width: 37px;
+        height: 37px;
+        text-align: center;
+        font-size: 32px;
+        font-weight: 600;
+
+        &:hover {
+          background-color: var(--sp-light-grey);
+        }
+      }
+
+      nav {
+        padding: 0.5rem 0;
       }
     }
   }
@@ -134,6 +160,10 @@ body {
         #home {
           border-left: 1px solid var(--sp-mark-green);
         }
+      }
+
+      .playlist {
+        display: block;
       }
     }
   }
