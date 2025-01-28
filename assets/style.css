@@ -6,8 +6,10 @@
 
 :root {
   --sp-black: #080b12;
-  --sp-dark-grey:#a3a3a3;
+  --sp-dark-grey: #a3a3a3;
   --sp-light-grey: #d2d2d2;
+  --sp-text-hover:#ededed;
+  --sp-mark-green: #adff2f;
 }
 
 body {
@@ -45,16 +47,16 @@ body {
     flex-direction: column;
     padding: 0.5rem 0;
 
-    .logo-small {
+    .logo {
       width: 28px;
     }
 
     nav {
       padding: 1rem 0;
-      
+      width: 100%;
+
 
       li {
-        margin: auto;
         display: flex;
         justify-content: center;
         align-items: center;
@@ -74,8 +76,10 @@ body {
         display: none;
       }
 
-      #home a {
-        color: var(--sp-light-grey);
+      #home {
+        a {
+          color: var(--sp-text-hover);
+        }
       }
     }
   }
@@ -104,6 +108,29 @@ body {
 
     .sidebar {
       min-width: 230px;
+      align-items: start;
+
+      .logo {
+        content: url(./img/logo.svg);
+        width: 128px;
+        padding: 1rem 0 0 1rem;
+      }
+
+      nav {
+
+        li {
+          justify-content: start;
+          padding-left: 1rem;
+
+          a {
+            display: block;
+          }
+        }
+
+        #home {
+          border-left: 1px solid var(--sp-mark-green);
+        }
+      }
     }
   }
 }
