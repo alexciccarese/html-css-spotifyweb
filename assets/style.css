@@ -7,6 +7,7 @@
 :root {
   --sp-bg-top-header:#080b12;
   --sp-bg-black: #000000;
+  --sp-bg-bottom:#282828;
   --sp-dark-grey: #6b6b6b;
   --sp-light-grey: #d2d2d2;
   --sp-text-hover:#ededed;
@@ -20,15 +21,10 @@ body {
 .debug {
 
   .top {
-    background-color: grey;
 
     main {
-      background-color: red;
+      background-color: rgba(6, 167, 188, 0.363);
     }
-  }
-
-  .bottom {
-    background-color: green;
   }
 }
 
@@ -195,6 +191,8 @@ body {
 }
 
 .bottom {
+  width: 100%;
+  background-color: var(--sp-bg-bottom);
   height: 90px;
   position: sticky;
   bottom: 0;
