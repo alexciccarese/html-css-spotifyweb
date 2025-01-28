@@ -207,6 +207,7 @@ img {
     display: flex;
 
     .img_live {
+      display: none;
       width: 28px;
       height: 28px;
     }
@@ -344,7 +345,13 @@ img {
       align-items: center;
       column-gap: 1rem;
 
+      .list,
+      .monitor {
+        display: none;
+      }
+
       .control_box {
+        display: none;
         width: 80px;
       }
     }
@@ -400,6 +407,28 @@ img {
         }
 
         .line {
+          display: block;
+        }
+      }
+    }
+  }
+
+  .bottom {
+
+    .output {
+
+      .img_live {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+    }
+
+    .controls {
+
+      .container {
+
+        .control_box {
           display: block;
         }
       }
