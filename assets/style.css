@@ -435,3 +435,61 @@ img {
     }
   }
 }
+
+
+/*************************************************
+    TABLET
+ *************************************************/
+@media screen and (min-width:768px) {
+
+  .bottom {
+
+    .output {
+
+      .img_live {
+        display: block;
+        width: 40px;
+        height: 40px;
+      }
+
+      .container {
+        width: 200px;
+
+        .save_song {
+          display: block;
+          display: flex;
+          gap: 0.5rem;
+        }
+      }
+    }
+
+    .controls {
+
+      .container {
+
+        .list,
+        .monitor {
+          display: block;
+        }
+
+        .control_box {
+          display: block;
+        }
+      }
+    }
+
+    .player_down {
+      width: 100%;
+    }
+  }
+
+  .player {
+
+    .container {
+
+      .player_down {
+        width: 100%;
+      }
+    }
+  }
+}
