@@ -5,7 +5,8 @@
 }
 
 :root {
-  --sp-black: #080b12;
+  --sp-bg-top-header:#080b12;
+  --sp-bg-black: #000000;
   --sp-dark-grey: #6b6b6b;
   --sp-light-grey: #d2d2d2;
   --sp-text-hover:#ededed;
@@ -23,10 +24,6 @@ body {
 
     main {
       background-color: red;
-
-      .header {
-        background-color: aqua;
-      }
     }
   }
 
@@ -40,7 +37,7 @@ body {
   display: flex;
 
   .sidebar {
-    background-color: var(--sp-black);
+    background-color: var(--sp-bg-black);
     width: 50px;
     display: flex;
     align-items: center;
@@ -167,15 +164,40 @@ body {
   main {
     width: 100%;
     height: calc(100vh - 90px);
+  }
 
-    .header {
-      height: 90px;
+  .header {
+    background-color: var(--sp-bg-top-header);
+    height: 90px;
+    position: sticky;
+    top: 0;
+
+    .upgrade {
+      height: 100%;
+      display: flex;
+      justify-content: end;
+      align-items: center;
+      margin-right: 0.5rem;
+
+      a {
+        color: var(--sp-light-grey);
+        text-decoration: none;
+        padding: 0.6rem 1.5rem;
+        border: 1px solid var(--sp-light-grey);
+        border-radius: 50px;
+
+        &:hover {
+          font-size: 18px;
+        }
+      }
     }
   }
 }
 
 .bottom {
   height: 90px;
+  position: sticky;
+  bottom: 0;
 }
 
 
