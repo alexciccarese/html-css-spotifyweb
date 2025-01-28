@@ -19,6 +19,10 @@
 
     main {
       background-color: red;
+
+      .header {
+        background-color: aqua;
+      }
     }
   }
 
@@ -29,7 +33,20 @@
 
 
 .top {
-  height: calc(100vh - 90px);
+  display: flex;
+
+  .sidebar {
+    width: 50px;
+  }
+
+  main {
+    width: 100%;
+    height: calc(100vh - 90px);
+
+    .header {
+      height: 90px;
+    }
+  }
 }
 
 .bottom {
