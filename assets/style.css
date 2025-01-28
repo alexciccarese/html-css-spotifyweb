@@ -201,8 +201,10 @@ body {
   padding: 0.5rem;
 
   .output {
+    width: 30%;
     height: 100%;
     display: flex;
+    justify-content: space-between;
     align-items: center;
     gap: 0.5rem;
 
@@ -227,7 +229,23 @@ body {
       display: flex;
       flex-direction: column;
       gap: 0.2rem;
+
+      .heart {
+        &:hover {
+          content: url(./img/heart_light.png);
+        }
+      }
+
+      .folder {
+        &:hover {
+          content: url(./img/folder_light.png);
+        }
+      }
     }
+  }
+
+  .player {
+    width: 30%;
   }
 }
 
