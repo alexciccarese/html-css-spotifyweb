@@ -206,15 +206,32 @@ img {
           display: flex;
           flex-wrap: wrap;
           justify-content: center;
-          gap: 3rem;
+          gap: 2rem;
 
           li {
+            padding: 0.5rem 0;
+
+            &:hover {
+
+              .hover_line {
+                display: block;
+                background-color: var(--sp-mark-green);
+              }
+            }
 
             a {
               color: var(--sp-dark-grey);
               text-decoration: none;
               font-size: 14px;
               font-weight: 600;
+            }
+
+            .hover_line {
+              width: 30px;
+              height: 2px;
+              margin: auto;
+              background-color: transparent;
+              margin-top: 0.2rem;
             }
           }
         }
@@ -256,7 +273,7 @@ img {
 
             .container {
               position: relative;
-              display:inline-flex;
+              display: inline-flex;
 
               &:hover {
 
