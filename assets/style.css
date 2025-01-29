@@ -8,7 +8,7 @@
   --sp-bg-top-header: #080b12;
   --sp-bg-black: #000000;
   --sp-bg-bottom: #282828;
-  --sp-bg-content:#141922;
+  --sp-bg-content: #141922;
   --sp-dark-grey: #6b6b6b;
   --sp-light-grey: #d2d2d2;
   --sp-text-hover: #ededed;
@@ -193,12 +193,13 @@ img {
     }
 
     .content {
-      padding: 0 1rem;
+
 
       .menu {
         display: flex;
-        padding-top: 1rem;
-        
+        justify-content: center;
+        padding: 1rem;
+
         ul {
           list-style: none;
           display: flex;
@@ -207,13 +208,34 @@ img {
           gap: 3rem;
 
           li {
-            
+
             a {
               color: var(--sp-dark-grey);
               text-decoration: none;
               font-size: 12px;
               font-weight: 600;
             }
+          }
+        }
+      }
+
+      section {
+        padding: 1rem;
+
+        h2 {
+          color: var(--sp-light-grey);
+        }
+
+        .albums {
+          display: flex;
+          flex-wrap: wrap;
+          gap: 1rem;
+          padding: 1rem 0;
+
+          .album {
+            min-height: 250px;
+            width: calc(100% / 2 - 1rem);
+            background-color: red;
           }
         }
       }
