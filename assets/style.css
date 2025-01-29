@@ -213,7 +213,7 @@ img {
             a {
               color: var(--sp-dark-grey);
               text-decoration: none;
-              font-size: 12px;
+              font-size: 14px;
               font-weight: 600;
             }
           }
@@ -241,6 +241,7 @@ img {
 
             h3 {
               color: var(--sp-light-grey);
+              font-size: 16px;
               font-weight: 800;
               line-height: 1.5rem;
             }
@@ -427,7 +428,7 @@ img {
 /*************************************************
     MOBILE LARGE
  *************************************************/
-@media screen and (min-width:576px) {
+@media screen and (min-width: 576px) {
 
   .top {
 
@@ -505,7 +506,7 @@ img {
 /*************************************************
     TABLET
  *************************************************/
-@media screen and (min-width:768px) {
+@media screen and (min-width: 768px) {
 
   .bottom {
 
@@ -557,4 +558,40 @@ img {
       }
     }
   }
+
+  .top {
+    main {
+        .content {
+            section {
+                .albums {
+                   .album {
+                     width: calc(100% / 4 - 1rem);
+               }
+           }
+       }
+   }
 }
+
+}
+}
+
+
+/*************************************************
+    DESKTOP
+ *************************************************/
+ @media screen and (min-width: 992px) {
+
+  .top {
+     main {
+         .content {
+             section {
+                 .albums {
+                    .album {
+                      width: calc(100% / 5 - 1rem);
+                }
+            }
+        }
+    }
+}
+
+ }
