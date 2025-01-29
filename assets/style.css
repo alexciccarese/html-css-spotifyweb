@@ -214,6 +214,7 @@ img {
             &:hover {
 
               .hover_line {
+                cursor: pointer;
                 display: block;
                 background-color: var(--sp-mark-green);
               }
