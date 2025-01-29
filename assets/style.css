@@ -8,6 +8,7 @@
   --sp-bg-top-header: #080b12;
   --sp-bg-black: #000000;
   --sp-bg-bottom: #282828;
+  --sp-bg-content:#141922;
   --sp-dark-grey: #6b6b6b;
   --sp-light-grey: #d2d2d2;
   --sp-text-hover: #ededed;
@@ -158,34 +159,62 @@ img {
   }
 
   main {
-    height: calc(100vh - 90px);
-  }
+    background-color: var(--sp-bg-content);
+    width: 100%;
 
-  .header {
-    background-color: var(--sp-bg-top-header);
-    height: 90px;
-    position: sticky;
-    top: 0;
+    .header {
+      background-color: var(--sp-bg-top-header);
+      height: 90px;
+      position: sticky;
+      top: 0;
 
-    .upgrade {
-      height: 100%;
-      display: flex;
-      justify-content: end;
-      align-items: center;
-      margin-right: 0.5rem;
+      .upgrade {
+        height: 100%;
+        display: flex;
+        justify-content: end;
+        align-items: center;
+        margin-right: 0.5rem;
 
-      a {
-        color: var(--sp-light-grey);
-        text-decoration: none;
-        padding: 0.6rem 1.5rem;
-        border: 1px solid var(--sp-light-grey);
-        border-radius: 50px;
+        a {
+          color: var(--sp-light-grey);
+          text-decoration: none;
+          padding: 0.6rem 1.5rem;
+          border: 1px solid var(--sp-light-grey);
+          border-radius: 50px;
 
-        &:hover {
-          font-size: 18px;
-          color: var(--sp-bg-top-header);
-          border-color: var(--sp-mark-green);
-          background-color: var(--sp-mark-green);
+          &:hover {
+            font-size: 18px;
+            color: var(--sp-bg-top-header);
+            border-color: var(--sp-mark-green);
+            background-color: var(--sp-mark-green);
+          }
+        }
+      }
+    }
+
+    .content {
+      padding: 0 1rem;
+
+      .menu {
+        display: flex;
+        padding-top: 1rem;
+        
+        ul {
+          list-style: none;
+          display: flex;
+          flex-wrap: wrap;
+          justify-content: center;
+          gap: 3rem;
+
+          li {
+            
+            a {
+              color: var(--sp-dark-grey);
+              text-decoration: none;
+              font-size: 12px;
+              font-weight: 600;
+            }
+          }
         }
       }
     }
@@ -193,8 +222,8 @@ img {
 }
 
 .bottom {
-  width: 100%;
   background-color: var(--sp-bg-bottom);
+  width: 100%;
   height: 90px;
   position: sticky;
   display: flex;
