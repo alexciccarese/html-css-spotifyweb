@@ -193,7 +193,7 @@ img {
     }
 
     .content {
-      height: 100%;
+      height: calc(100vh - 180px);
       overflow-y: auto;
 
       .menu {
@@ -241,6 +241,8 @@ img {
 
             h3 {
               color: var(--sp-light-grey);
+              font-weight: 800;
+              line-height: 1.5rem;
             }
 
             h4 {
