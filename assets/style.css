@@ -241,13 +241,16 @@ img {
 
             .container {
               position: relative;
-              width: 100%;
+              width: auto;
               height: auto;
+              display:inline-block;
 
-              .img {
-                display: block;
-                opacity: 1;
-                display: block;
+              &:hover {
+
+                .hover {
+                  display: flex;
+                  cursor: pointer;
+                }
               }
 
               .hover {
@@ -259,9 +262,11 @@ img {
                 justify-content: center;
                 align-items: center;
                 background-color: rgba(0, 0, 0, 0.532);
+                display: none;
 
-                .img {
-                  width: 50px;
+                img {
+                  width: 20%;
+                  height: auto;
                 }
               }
             }
