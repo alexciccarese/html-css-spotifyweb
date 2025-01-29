@@ -17,6 +17,7 @@
 
 body {
   font-family: "Montserrat", serif;
+  overflow: hidden;
 }
 
 img {
@@ -26,17 +27,16 @@ img {
 
 .top {
   display: flex;
+  height: calc(100vh - 90px);
 
   .sidebar {
     background-color: var(--sp-bg-black);
     min-width: 50px;
-    height: calc(100vh - 90px);
     display: flex;
     align-items: center;
     flex-direction: column;
     padding-top: 0.5rem;
     overflow: hidden;
-
 
 
     .logo {
@@ -193,7 +193,8 @@ img {
     }
 
     .content {
-
+      height: 100%;
+      overflow-y: auto;
 
       .menu {
         display: flex;
