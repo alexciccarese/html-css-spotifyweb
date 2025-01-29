@@ -243,7 +243,7 @@ img {
               position: relative;
               width: auto;
               height: auto;
-              display:inline-block;
+              display: inline-block;
 
               &:hover {
 
@@ -281,6 +281,18 @@ img {
             h4 {
               color: var(--sp-dark-grey);
             }
+          }
+        }
+      }
+
+      section#creation {
+
+        .text {
+          line-height: 2rem;
+
+          p {
+            color: var(--sp-dark-grey);
+            font-weight: 700;
           }
         }
       }
@@ -611,7 +623,7 @@ img {
 /*************************************************
     DESKTOP
  *************************************************/
-@media screen and (min-width: 992px) {
+@media screen and (min-width: 1480px) {
 
   .top {
     main {
@@ -619,11 +631,13 @@ img {
         section {
           .albums {
             .album {
-              width: calc(100% / 5 - 1rem);
+              width: calc(100% / 6 - 1rem);
             }
           }
         }
       }
     }
-
   }
+}
+
+
