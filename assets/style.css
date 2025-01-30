@@ -213,6 +213,10 @@ img {
 
             &:hover {
 
+              a {
+                color: var(--sp-light-grey);
+              }
+
               .hover_line {
                 cursor: pointer;
                 display: block;
